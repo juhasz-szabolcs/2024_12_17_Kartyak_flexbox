@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -14,8 +14,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1300px;
     background: white;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -40,4 +40,46 @@ body {
 .card:hover {
     transform: scale(1.1); /* Méret növelése */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Erősebb árnyék hover esetén */
+}
+
+/* Navigációs sáv stílusai */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #4CAF50; /* Színváltozás hover esetén */
 }
